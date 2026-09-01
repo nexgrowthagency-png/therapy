@@ -93,7 +93,7 @@ export default function Business() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sage/80 text-xs uppercase tracking-[0.3em] font-sans mb-4">Practical Information</p>
           <h1 className="font-serif text-5xl md:text-6xl mb-5 leading-tight">Insurance &amp; Fees</h1>
-          <p className="text-white/70 font-sans text-xl font-light max-w-2xl">
+          <p className="text-white/70 font-sans text-xl font-light max-w-2xl mx-auto">
             Transparent pricing, accepted insurance plans, and convenient services designed to make care as accessible as possible.
           </p>
         </div>

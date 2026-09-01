@@ -38,7 +38,7 @@ export default function Navbar() {
           {/* Logo + Name */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="/logo.png"
+              src="/Nick.png"
               alt="Nicholas Lofthouse PhD"
               className="h-10 w-auto"
               onError={(e) => { e.target.style.display = 'none'; }}

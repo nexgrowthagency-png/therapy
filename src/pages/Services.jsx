@@ -87,7 +87,7 @@ export default function Services() {
         <div className="relative z-10 max-w-4xl mx-auto">
           <p className="text-sage/80 text-xs uppercase tracking-[0.3em] font-sans mb-4">Evidence-Based Care</p>
           <h1 className="font-serif text-5xl md:text-6xl mb-5 leading-tight">Services &amp; Diagnoses</h1>
-          <p className="text-white/70 font-sans text-xl font-light max-w-2xl">
+          <p className="text-white/70 font-sans text-xl font-light max-w-2xl mx-auto">
             Comprehensive psychological assessment and therapy using only the most scientifically supported methods.
           </p>
         </div>

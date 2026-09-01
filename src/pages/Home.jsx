@@ -117,11 +117,11 @@ export default function Home() {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
             <p className="text-sage/80 text-xs uppercase tracking-[0.3em] font-sans mb-6">
-              Licensed Child &amp; Adolescent Clinical Psychologist · Columbus, OH
+              Compassionate Care for Growing Minds
             </p>
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6">
-              Compassionate Care<br />
-              <span className="text-terracotta italic">for Growing Minds</span>
+              Child &amp; Adolescent<br />
+              <span className="text-terracotta italic">Clinical Psychologist</span>
             </h1>
             <p className="text-white/75 text-lg md:text-xl font-sans max-w-2xl mx-auto mb-10 leading-relaxed font-light">
               Evidence-based psychological assessment and therapy for children, adolescents, and families — tailored to each child's unique story.

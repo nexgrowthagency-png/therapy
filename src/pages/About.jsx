@@ -72,7 +72,7 @@ export default function About() {
           <h1 className="font-serif text-5xl md:text-6xl mb-5 leading-tight">
             Nicholas Lofthouse, Ph.D.
           </h1>
-          <p className="text-white/70 font-sans text-xl font-light max-w-2xl">
+          <p className="text-white/70 font-sans text-xl font-light max-w-2xl mx-auto">
             Licensed Child &amp; Adolescent Clinical Psychologist — Bringing evidence-based care and genuine compassion to every family.
           </p>
         </div>
@@ -85,17 +85,11 @@ export default function About() {
             {/* Photo placeholder */}
             <AnimatedSection direction="left">
               <div className="relative">
-                <div className="aspect-[4/5] rounded-3xl bg-sage/10 border-2 border-dashed border-sage/30 flex flex-col items-center justify-center text-center p-8">
-                  <svg className="w-16 h-16 text-sage/40 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1}
-                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <p className="text-sage/60 font-sans text-sm">
-                    Add your photo here<br />
-                    <span className="text-xs text-gray-soft">(Place image as <code className="bg-sage/10 px-1 rounded">public/dr-lofthouse.jpg</code>)</span>
-                  </p>
-                </div>
+                <img
+                  src="/Nick.png"
+                  alt="Dr. Nicholas Lofthouse"
+                  className="w-full aspect-[4/5] object-cover rounded-3xl shadow-md"
+                />
                 {/* Floating credential badge */}
                 <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl p-4 shadow-lg border border-sage/10">
                   <p className="font-serif text-2xl font-bold text-sage-dark">8+</p>

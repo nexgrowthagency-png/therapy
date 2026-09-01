@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <img
-                src="/logo.png"
+                src="/Nick.png"
                 alt="Nicholas Lofthouse PhD"
                 className="h-10 w-auto brightness-0 invert"
                 onError={(e) => { e.target.style.display = 'none'; }}

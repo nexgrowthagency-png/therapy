@@ -62,7 +62,7 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sage/80 text-xs uppercase tracking-[0.3em] font-sans mb-4">Reach Out</p>
           <h1 className="font-serif text-5xl md:text-6xl mb-5 leading-tight">Contact &amp; Book</h1>
-          <p className="text-white/70 font-sans text-xl font-light max-w-2xl">
+          <p className="text-white/70 font-sans text-xl font-light max-w-2xl mx-auto">
             Ready to take the first step? Request a consultation below or call us directly — we're here to help.
           </p>
         </div>
