@@ -139,7 +139,7 @@ export default function Home() {
 
         {/* Scroll nudge */}
         <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
+          className="absolute bottom-8 left-0 right-0 flex flex-col items-center gap-1"
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 2.2, ease: 'easeInOut' }}
         >
