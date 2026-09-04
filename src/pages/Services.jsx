@@ -228,8 +228,15 @@ export default function Services() {
               We're happy to talk through what treatment might look like for your child. Schedule a consultation to get started.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-primary">Request a Consultation</Link>
-              <Link to="/schedule" className="btn-outline-sage">View Scheduling Info</Link>
+              <a
+                href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Book an Appointment
+              </a>
+              <Link to="/contact" className="btn-outline-sage">Send Us a Question</Link>
             </div>
           </div>
         </AnimatedSection>

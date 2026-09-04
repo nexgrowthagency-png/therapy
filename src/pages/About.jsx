@@ -208,7 +208,14 @@ export default function About() {
               Schedule a consultation with Dr. Lofthouse and take the first step toward clarity and lasting change for your child and family.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-primary">Request a Consultation</Link>
+              <a
+                href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Book an Appointment
+              </a>
               <a href="tel:6145065976" className="btn-outline-sage">Call (614) 506-5976</a>
             </div>
           </div>

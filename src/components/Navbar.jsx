@@ -73,12 +73,14 @@ export default function Navbar() {
                 </Link>
               );
             })}
-            <Link
-              to="/contact"
+            <a
+              href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
+              target="_blank"
+              rel="noopener noreferrer"
               className="ml-3 bg-terracotta text-white px-5 py-2.5 rounded-full text-sm font-sans font-medium hover:opacity-90 transition-all duration-200 hover:shadow-lg hover:scale-105"
             >
               Book Now
-            </Link>
+            </a>
           </nav>
 
           {/* Mobile Hamburger */}
@@ -125,12 +127,14 @@ export default function Navbar() {
                   {label}
                 </Link>
               ))}
-              <Link
-                to="/contact"
+              <a
+                href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-3 bg-terracotta text-white px-5 py-3 rounded-full text-sm font-sans font-medium text-center"
               >
                 Book Now
-              </Link>
+              </a>
             </div>
           </motion.nav>
         )}

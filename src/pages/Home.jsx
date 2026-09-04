@@ -159,9 +159,14 @@ export default function Home() {
               Evidence-based psychological assessment and therapy for children, adolescents, and families — tailored to each child's unique story.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-primary text-base px-10 py-4">
-                Schedule a Consultation
-              </Link>
+              <a
+                href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-base px-10 py-4"
+              >
+                Book an Appointment
+              </a>
               <Link to="/about" className="btn-outline-white text-base px-10 py-4">
                 Meet Dr. Lofthouse
               </Link>
@@ -334,12 +339,14 @@ export default function Home() {
               Schedule a consultation today. We're here to support your child and family with compassionate, science-backed care.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
+              <a
+                href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-terracotta px-10 py-4 rounded-full font-sans font-medium text-base hover:shadow-xl hover:scale-105 transition-all duration-200"
               >
-                Request a Consultation
-              </Link>
+                Book an Appointment
+              </a>
               <a
                 href="tel:6145065976"
                 className="border-2 border-white text-white px-10 py-4 rounded-full font-sans font-medium text-base hover:bg-white hover:text-terracotta transition-all duration-200"
@@ -347,6 +354,12 @@ export default function Home() {
                 Call (614) 506-5976
               </a>
             </div>
+            <p className="mt-6 font-sans text-white/60 text-sm">
+              Have questions first?{' '}
+              <Link to="/contact" className="text-white/80 underline underline-offset-2 hover:text-white transition-colors">
+                Send us a message →
+              </Link>
+            </p>
           </AnimatedSection>
         </div>
       </section>

@@ -6,7 +6,7 @@ const navLinks = [
   { path: '/services',       label: 'Services & Diagnoses' },
   { path: '/insurance-fees', label: 'Insurance & Fees' },
   { path: '/schedule',       label: 'Schedule Online' },
-  { path: '/contact',        label: 'Contact & Book' },
+  { path: '/contact',        label: 'General Inquiries' },
 ];
 
 export default function Footer() {
@@ -39,12 +39,14 @@ export default function Footer() {
               >
                 Call Now
               </a>
-              <Link
-                to="/contact"
+              <a
+                href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border border-white/40 text-white px-4 py-2 rounded-full text-sm font-sans font-medium hover:border-white transition-all"
               >
                 Book Online
-              </Link>
+              </a>
             </div>
           </div>
 

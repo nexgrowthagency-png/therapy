@@ -60,10 +60,10 @@ export default function Contact() {
       {/* ─── Page Hero ─── */}
       <section className="page-hero">
         <div className="max-w-4xl mx-auto">
-          <p className="text-sage/80 text-xs uppercase tracking-[0.3em] font-sans mb-4">Reach Out</p>
-          <h1 className="font-serif text-5xl md:text-6xl mb-5 leading-tight">Contact &amp; Book</h1>
+          <p className="text-sage/80 text-xs uppercase tracking-[0.3em] font-sans mb-4">Get in Touch</p>
+          <h1 className="font-serif text-5xl md:text-6xl mb-5 leading-tight">Questions &amp; Inquiries</h1>
           <p className="text-white/70 font-sans text-xl font-light max-w-2xl mx-auto">
-            Ready to take the first step? Request a consultation below or call us directly — we're here to help.
+            Not quite ready to book? Have a question first? Send us a message and we'll get back to you within 1–2 business days.
           </p>
         </div>
       </section>
@@ -85,28 +85,28 @@ export default function Contact() {
                 Call (614) 506-5976
               </a>
               <a
-                href="#request-quote"
+                href="#inquiry-form"
                 className="flex items-center gap-3 bg-terracotta text-white px-8 py-4 rounded-full font-sans font-medium text-base hover:opacity-90 transition-all duration-200 hover:shadow-lg hover:scale-105 w-full sm:w-auto justify-center"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
                   />
                 </svg>
-                Request a Consultation
+                Send a Message
               </a>
               <a
-                href="https://www.therapyappointment.com"
+                href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 border-2 border-sage-dark text-sage-dark px-8 py-4 rounded-full font-sans font-medium text-base hover:bg-sage-dark hover:text-white transition-all duration-200 w-full sm:w-auto justify-center"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                   />
                 </svg>
-                Schedule Online
+                Book an Appointment
               </a>
             </div>
           </AnimatedSection>
@@ -114,17 +114,26 @@ export default function Contact() {
       </section>
 
       {/* ─── Main Content: Form + Info ─── */}
-      <section id="request-quote" className="py-24 bg-cream">
+      <section id="inquiry-form" className="py-24 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-16">
 
             {/* ─── Contact Form ─── */}
             <div className="lg:col-span-3">
               <AnimatedSection direction="left">
-                <p className="section-label">Request a Consultation</p>
-                <h2 className="font-serif text-3xl text-sage-dark mb-2">Tell Us About Your Child</h2>
+                <p className="section-label">General Inquiries</p>
+                <h2 className="font-serif text-3xl text-sage-dark mb-2">Send Us a Message</h2>
                 <p className="text-gray-soft font-sans text-sm leading-relaxed mb-8">
-                  Fill in the form below and Dr. Lofthouse will reach out within 1–2 business days to discuss next steps.
+                  Have a question before booking? Not sure if we're the right fit? Fill in the form and Dr. Lofthouse will reply within 1–2 business days.
+                  Ready to schedule?{' '}
+                  <a
+                    href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-terracotta hover:underline font-medium"
+                  >
+                    Book directly through our portal →
+                  </a>
                 </p>
 
                 <AnimatePresence mode="wait">
@@ -142,7 +151,15 @@ export default function Contact() {
                       </div>
                       <h3 className="font-serif text-2xl text-sage-dark mb-3">Message Received!</h3>
                       <p className="text-gray-soft font-sans text-sm leading-relaxed max-w-sm mx-auto">
-                        Thank you for reaching out. Dr. Lofthouse will contact you within 1–2 business days. For urgent matters, please call <a href="tel:6145065976" className="text-terracotta hover:underline">(614) 506-5976</a>.
+                        Thank you for reaching out. Dr. Lofthouse will reply within 1–2 business days. Ready to book now?{' '}
+                        <a
+                          href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-terracotta hover:underline"
+                        >
+                          Schedule online →
+                        </a>
                       </p>
                       <button
                         onClick={() => setSubmitted(false)}
@@ -337,17 +354,17 @@ export default function Contact() {
 
                 {/* Callout box */}
                 <div className="mt-8 bg-terracotta/8 border border-terracotta/20 rounded-2xl p-5">
-                  <h4 className="font-serif text-sage-dark text-base mb-2">Need to Schedule Online?</h4>
+                  <h4 className="font-serif text-sage-dark text-base mb-2">Ready to Book?</h4>
                   <p className="text-gray-soft font-sans text-sm leading-relaxed mb-4">
-                    Existing and new clients can book appointments 24/7 through our secure online portal.
+                    New and existing clients can book appointments 24/7 through our secure online scheduling portal.
                   </p>
                   <a
-                    href="https://www.therapyappointment.com"
+                    href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-terracotta font-sans font-medium text-sm hover:underline"
                   >
-                    Go to TherapyAppointment.com →
+                    Book an Appointment →
                   </a>
                 </div>
               </AnimatedSection>

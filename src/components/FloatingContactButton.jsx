@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function FloatingContactButton() {
@@ -21,7 +20,7 @@ export default function FloatingContactButton() {
     },
     {
       label: 'Schedule',
-      href: '/contact',
+      href: 'https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5',
       icon: (
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -30,7 +29,8 @@ export default function FloatingContactButton() {
         </svg>
       ),
       bg: 'bg-terracotta',
-      isLink: true,
+      isLink: false,
+      external: true,
     },
   ];
 
@@ -45,24 +45,15 @@ export default function FloatingContactButton() {
             exit={{ opacity: 0, y: 12, scale: 0.85 }}
             transition={{ delay: i * 0.06, duration: 0.2 }}
           >
-            {action.isLink ? (
-              <Link
-                to={action.href}
-                onClick={() => setOpen(false)}
-                className={`flex items-center gap-2 ${action.bg} text-white pl-4 pr-5 py-3 rounded-full shadow-lg text-sm font-sans font-medium`}
-              >
-                {action.icon}
-                {action.label}
-              </Link>
-            ) : (
-              <a
-                href={action.href}
-                className={`flex items-center gap-2 ${action.bg} text-white pl-4 pr-5 py-3 rounded-full shadow-lg text-sm font-sans font-medium`}
-              >
-                {action.icon}
-                {action.label}
-              </a>
-            )}
+            <a
+              href={action.href}
+              {...(action.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              onClick={() => setOpen(false)}
+              className={`flex items-center gap-2 ${action.bg} text-white pl-4 pr-5 py-3 rounded-full shadow-lg text-sm font-sans font-medium`}
+            >
+              {action.icon}
+              {action.label}
+            </a>
           </motion.div>
         ))}
       </AnimatePresence>

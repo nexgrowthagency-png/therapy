@@ -70,7 +70,7 @@ export default function Scheduling() {
               </div>
               <div className="mt-8">
                 <a
-                  href="https://www.therapyappointment.com"
+                  href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary inline-block"
@@ -222,7 +222,7 @@ export default function Scheduling() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.therapyappointment.com"
+                href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/11ed0243a902c538a8a50e3b532c70b5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-terracotta text-white px-10 py-4 rounded-full font-sans font-medium hover:opacity-90 transition-all hover:scale-105 hover:shadow-lg"
@@ -230,7 +230,7 @@ export default function Scheduling() {
                 Schedule Online
               </a>
               <Link to="/contact" className="btn-outline-white px-10 py-4">
-                Contact Us First
+                Have Questions? Contact Us
               </Link>
             </div>
           </div>
