@@ -1,5 +1,6 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
 
 const services = [
@@ -95,18 +96,49 @@ const stats = [
 ];
 
 export default function Home() {
+  const imgControls = useAnimation();
+
+  useEffect(() => {
+    const run = async () => {
+      await imgControls.start({
+        opacity: 1,
+        scale: 1,
+        transition: { duration: 1.5, ease: [0.22, 1, 0.36, 1] },
+      });
+      imgControls.start({
+        scale: 1.07,
+        transition: { duration: 24, ease: 'linear', repeat: Infinity, repeatType: 'reverse' },
+      });
+    };
+    run();
+  }, [imgControls]);
+
   return (
     <>
       {/* ─── Hero ─── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background layers */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/hero-bg.jpg)' }}
+        {/* Hero image — Ken Burns + fade-in scale */}
+        <motion.img
+          src="/Homepage.jpeg"
+          alt=""
+          aria-hidden="true"
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={imgControls}
+          style={{ willChange: 'transform, opacity' }}
         />
-        {/* Gradient overlay — looks great even without hero-bg.jpg */}
-        <div className="absolute inset-0 bg-gradient-to-br from-sage-dark via-sage-dark/95 to-sage/80" />
-        {/* Decorative circle */}
+
+        {/* Sage gradient overlay — keeps text legible, stays on-palette */}
+        <div className="absolute inset-0 bg-gradient-to-b from-sage-dark/45 via-sage-dark/55 to-sage-dark/80" />
+        {/* Radial vignette for depth */}
+        <div
+          className="absolute inset-0"
+          style={{ background: 'radial-gradient(ellipse at center, transparent 35%, rgba(74,93,78,0.40) 100%)' }}
+        />
+
+        {/* Decorative glows */}
         <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-sage/10 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] rounded-full bg-terracotta/10 blur-3xl pointer-events-none" />
 
