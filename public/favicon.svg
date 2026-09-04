@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <!-- Sage-dark rounded background -->
   <rect width="32" height="32" rx="7" fill="#4A5D4E"/>
-  <!-- Leaf body in site sage -->
-  <path d="M16 5C16 5 8 11.5 8 19C8 23.8 11.6 27 16 27C20.4 27 24 23.8 24 19C24 11.5 16 5 16 5Z" fill="#7C9885"/>
-  <!-- Terracotta centre vein -->
-  <line x1="16" y1="26.5" x2="16" y2="9" stroke="#C97B5C" stroke-width="1.8" stroke-linecap="round"/>
-  <!-- Subtle cream tip highlight -->
-  <circle cx="16" cy="7" r="1.4" fill="#FAF7F2" opacity="0.55"/>
+  <!-- Terracotta leaf body -->
+  <path d="M16 5C16 5 8 11.5 8 19C8 23.8 11.6 27 16 27C20.4 27 24 23.8 24 19C24 11.5 16 5 16 5Z" fill="#C97B5C"/>
+  <!-- Sage left vein branch -->
+  <line x1="16" y1="19" x2="11" y2="14" stroke="#7C9885" stroke-width="1.2" stroke-linecap="round" opacity="0.85"/>
+  <!-- Sage right vein branch -->
+  <line x1="16" y1="22" x2="20.5" y2="17" stroke="#7C9885" stroke-width="1.2" stroke-linecap="round" opacity="0.85"/>
+  <!-- Cream centre vein -->
+  <line x1="16" y1="26.5" x2="16" y2="8.5" stroke="#FAF7F2" stroke-width="1.6" stroke-linecap="round" opacity="0.85"/>
 </svg>
