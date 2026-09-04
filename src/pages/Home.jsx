@@ -75,16 +75,8 @@ const conditions = [
 
 const testimonials = [
   {
-    quote: 'Dr. Lofthouse has been incredible with our son. His approach is warm, structured, and we\'ve seen real progress in just a few months.',
-    author: 'Parent of a 10-year-old',
-  },
-  {
     quote: 'This amazing man literally saved my life. The most knowledgeable practitioner of mental health you will ever know. 10/5 stars, there\'s no one I\'d rather have in my corner.',
     author: 'Former Patient',
-  },
-  {
-    quote: 'My daughter actually looks forward to her sessions. The CBT tools she\'s learned have made a huge difference at home and at school.',
-    author: 'Parent of an 8-year-old',
   },
 ];
 
@@ -308,10 +300,10 @@ export default function Home() {
             <p className="section-label">Families We've Helped</p>
             <h2 className="section-title">What Parents Say</h2>
           </AnimatedSection>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="flex justify-center">
             {testimonials.map((t, i) => (
-              <AnimatedSection key={i} delay={i * 0.12} direction="up">
-                <div className="card h-full flex flex-col">
+              <AnimatedSection key={i} direction="up" className="w-full max-w-2xl">
+                <div className="card flex flex-col">
                   <div className="flex text-terracotta text-lg mb-4 gap-0.5">
                     {'★★★★★'.split('').map((s, j) => <span key={j}>{s}</span>)}
                   </div>
