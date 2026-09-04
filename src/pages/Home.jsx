@@ -148,7 +148,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="text-sage/80 text-xs uppercase tracking-[0.3em] font-sans mb-6">
+            <p className="text-white/80 text-xs uppercase tracking-[0.3em] font-sans mb-6">
               Compassionate Care for Growing Minds
             </p>
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6">
