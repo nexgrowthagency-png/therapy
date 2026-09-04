@@ -157,11 +157,12 @@ export default function Scheduling() {
                 <div className="space-y-3 font-sans text-sm">
                   {[
                     { day: 'Monday', hours: '8:00 am – 5:00 pm' },
-                    { day: 'Tuesday', hours: '1:00 pm – 8:00 pm' },
+                    { day: 'Tuesday', hours: '8:00 am – 5:00 pm' },
                     { day: 'Wednesday', hours: '8:00 am – 5:00 pm' },
                     { day: 'Thursday', hours: '8:00 am – 5:00 pm' },
                     { day: 'Friday', hours: '8:00 am – 5:00 pm' },
-                    { day: 'Saturday – Sunday', hours: 'Closed' },
+                    { day: 'Saturday', hours: '8:00 am – 12:00 pm' },
+                    { day: 'Sunday', hours: 'Closed' },
                   ].map(({ day, hours }) => (
                     <div key={day} className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0">
                       <span className="text-sage-dark font-medium">{day}</span>

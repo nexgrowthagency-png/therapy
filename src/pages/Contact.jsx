@@ -347,7 +347,8 @@ export default function Contact() {
                     <div>
                       <p className="font-sans font-medium text-sage-dark text-sm mb-0.5">Hours</p>
                       <p className="font-sans text-gray-soft text-sm">Mon – Fri: 8:00 am – 5:00 pm</p>
-                      <p className="font-sans text-gray-soft text-sm">Tuesday: 1:00 pm – 8:00 pm</p>
+                      <p className="font-sans text-gray-soft text-sm">Saturday: 8:00 am – 12:00 pm</p>
+                      <p className="font-sans text-gray-soft text-sm">Sunday: Closed</p>
                     </div>
                   </div>
                 </div>
