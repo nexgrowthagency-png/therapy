@@ -79,8 +79,8 @@ const testimonials = [
     author: 'Parent of a 10-year-old',
   },
   {
-    quote: 'We finally got answers after years of struggle. The assessment was thorough and everything was explained in a way we could truly understand.',
-    author: 'Parent of a 14-year-old',
+    quote: 'This amazing man literally saved my life. The most knowledgeable practitioner of mental health you will ever know. 10/5 stars, there\'s no one I\'d rather have in my corner.',
+    author: 'Former Patient',
   },
   {
     quote: 'My daughter actually looks forward to her sessions. The CBT tools she\'s learned have made a huge difference at home and at school.',
