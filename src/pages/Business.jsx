@@ -10,10 +10,10 @@ const insurances = [
 ];
 
 const fees = [
-  { service: 'Initial Appointment (45 min)', cost: '$160' },
-  { service: 'Individual Therapy (45 min)', cost: '$130' },
-  { service: 'Family or Parent Therapy (45 min)', cost: '$140' },
-  { service: 'Half Session (15–30 min)', cost: '$75' },
+  { service: 'Initial Appointment (60 min)', cost: '$200' },
+  { service: 'Individual Therapy (60 min)', cost: '$170' },
+  { service: 'Family or Parent Therapy (60 min)', cost: '$170' },
+  { service: 'Half Session (30 min)', cost: '$85' },
 ];
 
 const webServices = [
