@@ -21,7 +21,7 @@ export default function Footer() {
               <img
                 src="/Nick.png"
                 alt="Nicholas Lofthouse PhD"
-                className="h-10 w-auto brightness-0 invert"
+                className="h-12 w-12 rounded-full object-cover object-top border-2 border-white/20"
                 onError={(e) => { e.target.style.display = 'none'; }}
               />
               <div>
